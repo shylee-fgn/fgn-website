@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>FGN | Capability Statement</title>
+<!-- Google Analytics (GA4) placeholder, see index.html comment for details -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b0c0a;
+    --bg-dark:#0c0e0a;
+    --green:#1f9d55;
+    --green-light:#3fbf74;
+    --green-dark:#0d3d24;
+    --cream:#f7f6f2;
+    --line:rgba(255,255,255,.12);
+    --muted-on-dark:rgba(245,244,240,.62);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg-dark);
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:32px;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow:hidden;
+  }
+  body::before{
+    content:"";position:fixed;top:0;right:0;width:45%;height:100%;
+    background:linear-gradient(160deg,rgba(31,157,85,.14),transparent 60%);
+    clip-path:polygon(30% 0,100% 0,100% 100%,0 100%);
+    pointer-events:none;
+  }
+  h1,h2{font-family:'Playfair Display',serif;font-weight:600;letter-spacing:-.01em;line-height:1.1;}
+  .card{
+    position:relative;z-index:1;
+    width:100%;max-width:460px;
+    text-align:center;
+  }
+  .logo-mark-img{height:52px;width:auto;margin:0 auto 36px;display:block;}
+  .eyebrow{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--green-light);margin-bottom:16px;font-weight:500;
+  }
+  .eyebrow::before{
+    content:"";width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;
+    border-left:9px solid currentColor;
+  }
+  h1{font-size:clamp(28px,5vw,38px);margin-bottom:16px;}
+  .lead{color:var(--muted-on-dark);font-size:15px;line-height:1.65;font-weight:300;margin-bottom:36px;}
+
+  form{display:flex;flex-direction:column;gap:14px;text-align:left;}
+  .field label{
+    display:block;font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted-on-dark);margin-bottom:8px;
+  }
+  .field input{
+    width:100%;padding:14px 16px;border:1px solid var(--line);background:rgba(255,255,255,.04);
+    font-family:'Inter';font-size:14px;color:#fff;
+  }
+  .field input::placeholder{color:rgba(255,255,255,.3);}
+  .field input:focus{outline:none;border-color:var(--green);}
+  .hp{position:absolute;left:-9999px;top:-9999px;}
+  .btn{
+    margin-top:8px;
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:16px 28px;
+    font-family:'DM Mono',monospace;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid transparent;background:var(--green);color:#08130c;font-weight:500;
+    cursor:pointer;transition:background .25s ease;width:100%;
+  }
+  .btn:hover{background:var(--green-light);}
+  .btn:disabled{opacity:.6;cursor:not-allowed;}
+  .fine{font-size:11.5px;color:rgba(255,255,255,.35);margin-top:18px;line-height:1.5;}
+
+  .success{display:none;}
+  .success.show{display:block;}
+  form.hide{display:none;}
+  .check{
+    width:52px;height:52px;border-radius:50%;background:var(--green);color:#fff;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px;
+  }
+  .success h2{font-size:24px;margin-bottom:10px;}
+  .success p{color:var(--muted-on-dark);font-size:14.5px;line-height:1.6;margin-bottom:26px;}
+  .dl-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    padding:16px 28px;font-family:'DM Mono',monospace;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+    background:var(--green);color:#08130c;font-weight:500;border:none;cursor:pointer;
+  }
+  .dl-btn:hover{background:var(--green-light);}
+  .error{display:none;color:#e77;font-size:13px;margin-top:10px;}
+  .error.show{display:block;}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img class="logo-mark-img" src="../images/fgn-logo-transparent.png" alt="FGN logo">
+
+  <div id="formView">
+    <div class="eyebrow">Capability Statement</div>
+    <h1>Get the full FGN capability statement</h1>
+    <p class="lead">Enter your email and we'll unlock the download, our services, project experience and team, in one PDF.</p>
+
+    <form name="capability-statement" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="leadForm">
+      <input type="hidden" name="form-name" value="capability-statement">
+      <p class="hp">
+        <label>Leave this field blank: <input name="bot-field"></label>
+      </p>
+      <div class="field">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" placeholder="you@company.com" required>
+      </div>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith">
+      </div>
+      <div class="field">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Company name">
+      </div>
+      <button type="submit" class="btn" id="submitBtn">Unlock Download</button>
+      <div class="error" id="errorMsg">Something went wrong, please try again or email elliot@fgnprojects.com.au directly.</div>
+    </form>
+    <p class="fine">We'll only use this to follow up about your project. No spam.</p>
+  </div>
+
+  <div class="success" id="successView">
+    <div class="check">&#10003;</div>
+    <h2>You're in</h2>
+    <p>Your download should start automatically. If it doesn't, use the button below.</p>
+    <a class="dl-btn" id="dlBtn" href="../downloads/FGN-Capability-Statement-2026.pdf" download>Download PDF</a>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('leadForm');
+  const formView = document.getElementById('formView');
+  const successView = document.getElementById('successView');
+  const submitBtn = document.getElementById('submitBtn');
+  const errorMsg = document.getElementById('errorMsg');
+
+  function encodeForm(data) {
+    return Object.keys(data)
+      .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+      .join('&');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errorMsg.classList.remove('show');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeForm(data)
+    })
+      .then(() => {
+        formView.style.display = 'none';
+        successView.classList.add('show');
+        // auto-trigger the download
+        const a = document.createElement('a');
+        a.href = '../downloads/FGN-Capability-Statement-2026.pdf';
+        a.download = 'FGN-Capability-Statement.pdf';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      })
+      .catch(() => {
+        errorMsg.classList.add('show');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Unlock Download';
+      });
+  });
+</script>
+
+</body>
+</html>

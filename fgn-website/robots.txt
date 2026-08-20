@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /vip/
+
+Sitemap: https://fgn-projects.netlify.app/sitemap.xml

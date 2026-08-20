@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FGN | Commercial Fit-Out Specialists | Sydney, NSW</title>
+<!-- Google Analytics (GA4). This is a placeholder: replace G-XXXXXXXXXX with your real
+     Measurement ID from analytics.google.com before launch, or these two tags do nothing. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="description" content="FGN is a Sydney-based commercial fit-out contractor delivering office, retail, hospitality and wellness fit-outs, base building make-good, and joinery across NSW, ACT, QLD and VIC.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "FGN",
+  "description": "Sydney-based commercial fit-out contractor delivering office, retail, hospitality and wellness fit-outs, base building make-good, and joinery across NSW, ACT, QLD and VIC.",
+  "url": "https://fgn-projects.netlify.app/",
+  "telephone": "+61404563594",
+  "email": "elliot@fgnprojects.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "New South Wales" },
+    { "@type": "State", "name": "Australian Capital Territory" },
+    { "@type": "State", "name": "Queensland" },
+    { "@type": "State", "name": "Victoria" }
+  ],
+  "founder": [
+    { "@type": "Person", "name": "Elliot Terry-Fagan", "jobTitle": "Managing Director" },
+    { "@type": "Person", "name": "Will Desborough", "jobTitle": "Construction Manager" }
+  ]
+}
+</script>
+<style>
+  :root{
+    --ink:#0b0c0a;
+    --ink-soft:#14160f;
+    --bg-dark:#0c0e0a;
+    --bg-dark-2:#111309;
+    --green:#1f9d55;
+    --green-light:#3fbf74;
+    --green-dark:#0d3d24;
+    --cream:#f7f6f2;
+    --cream-2:#eeece4;
+    --line:rgba(255,255,255,.12);
+    --line-soft:rgba(0,0,0,.08);
+    --muted-on-dark:rgba(245,244,240,.62);
+    --muted-on-light:rgba(11,12,10,.62);
+    --radius:2px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px;}
+  .eyebrow{
+    display:flex;align-items:center;gap:10px;
+    font-family:'DM Mono',monospace;
+    font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--green-light);
+    margin-bottom:18px;
+    font-weight:500;
+  }
+  .eyebrow.dark{color:var(--green);}
+  .eyebrow::before{
+    content:"";
+    width:0;height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-left:9px solid currentColor;
+  }
+  h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:600;line-height:1.08;letter-spacing:-.01em;}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:16px 28px;
+    font-family:'DM Mono',monospace;
+    font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:all .25s ease;
+    white-space:nowrap;
+  }
+  .btn-solid{background:var(--green);color:#08130c;font-weight:500;}
+  .btn-solid:hover{background:var(--green-light);}
+  .btn-outline-dark{border-color:rgba(255,255,255,.3);color:#fff;}
+  .btn-outline-dark:hover{border-color:#fff;background:rgba(255,255,255,.06);}
+  .btn-outline-light{border-color:rgba(11,12,10,.25);color:var(--ink);}
+  .btn-outline-light:hover{border-color:var(--ink);}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(10,11,8,.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    transition:background .3s;
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 32px;max-width:1240px;margin:0 auto;
+  }
+  .logo{display:flex;align-items:center;gap:12px;}
+  .logo-mark-img{height:34px;width:auto;flex-shrink:0;}
+  .logo-text{color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:20px;letter-spacing:.01em;}
+  .logo-text small{
+    display:block;font-family:'DM Mono',monospace;font-weight:400;font-size:9.5px;
+    letter-spacing:.18em;color:var(--muted-on-dark);text-transform:uppercase;margin-top:2px;
+  }
+  .nav-links{display:flex;align-items:center;gap:36px;}
+  .nav-links a{
+    font-size:13.5px;color:rgba(245,244,240,.78);font-weight:500;
+    transition:color .2s;position:relative;
+  }
+  .nav-links a:hover{color:#fff;}
+  .nav-right{display:flex;align-items:center;gap:24px;}
+  .nav-phone{
+    font-family:'DM Mono',monospace;font-size:13px;color:#fff;
+    display:flex;align-items:center;gap:8px;
+  }
+  .nav-phone svg{width:14px;height:14px;stroke:var(--green-light);}
+  .burger{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;}
+
+  @media(max-width:920px){
+    .nav-links, .nav-phone{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100vh;
+    display:flex;align-items:flex-end;
+    background:#090a07;
+    overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background-image:linear-gradient(180deg,rgba(6,7,5,.55) 0%,rgba(6,7,5,.72) 55%,rgba(6,7,5,.94) 100%),url('images/pitt-st-lobby.jpg');
+    background-size:cover;background-position:center 30%;
+  }
+  .hero-cut{
+    position:absolute;top:0;right:0;width:38%;height:100%;
+    background:linear-gradient(160deg,rgba(31,157,85,.16),transparent 60%);
+    clip-path:polygon(30% 0,100% 0,100% 100%,0 100%);
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;z-index:2;width:100%;
+    padding:180px 32px 90px;max-width:1240px;margin:0 auto;
+  }
+  .hero h1{
+    color:#fff;font-size:clamp(42px,6.2vw,84px);max-width:820px;
+  }
+  .hero h1 em{
+    font-style:italic;font-weight:500;color:var(--green-light);
+  }
+  .hero p.lead{
+    color:var(--muted-on-dark);font-size:17px;max-width:520px;margin:26px 0 40px;
+    line-height:1.65;font-weight:300;
+  }
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px;}
+  .hero-stats{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    column-gap:48px;row-gap:24px;
+    border-top:1px solid rgba(255,255,255,.16);
+    padding-top:32px;max-width:760px;
+  }
+  .hero-stats div{border-left:1px solid rgba(255,255,255,.14);padding-left:24px;}
+  .hero-stats div:first-child{border-left:none;padding-left:0;}
+  .hero-stats .num{
+    font-family:'Playfair Display',serif;font-size:34px;color:#fff;font-weight:700;
+  }
+  .hero-stats .lbl{
+    font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted-on-dark);margin-top:6px;
+  }
+  @media(max-width:640px){
+    .hero-stats{grid-template-columns:1fr;row-gap:20px;}
+    .hero-stats div{border-left:none;padding-left:0;}
+  }
+
+  /* ---------- SECTION SHELLS ---------- */
+  section{padding:120px 0;}
+  .section-dark{background:var(--bg-dark);color:#fff;}
+  .section-head{
+    display:flex;justify-content:space-between;align-items:flex-end;gap:40px;
+    margin-bottom:64px;flex-wrap:wrap;
+  }
+  .section-head h2{font-size:clamp(30px,3.6vw,46px);max-width:600px;}
+  .section-head p{max-width:380px;color:var(--muted-on-light);font-size:15px;line-height:1.6;font-weight:300;}
+  .section-dark .section-head p{color:var(--muted-on-dark);}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;
+  }
+  .about-copy p{color:var(--muted-on-light);font-size:16px;line-height:1.75;margin-bottom:20px;font-weight:300;}
+  .about-chips{display:flex;gap:0;margin-top:36px;flex-wrap:wrap;}
+  .about-chips div{padding-right:36px;margin-right:36px;border-right:1px solid var(--line-soft);}
+  .about-chips div:last-child{border:none;}
+  .about-chips .num{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--green-dark);}
+  .about-chips .lbl{font-size:12px;color:var(--muted-on-light);margin-top:4px;max-width:120px;}
+  .about-photo{position:relative;}
+  .about-photo img{width:100%;height:520px;object-fit:cover;}
+  .about-photo::after{
+    content:"";position:absolute;bottom:-18px;right:-18px;width:60%;height:60%;
+    border:1px solid var(--green);z-index:-1;
+  }
+  .about-badge{
+    position:absolute;bottom:24px;left:24px;background:var(--ink);color:#fff;
+    padding:18px 24px;display:flex;gap:14px;align-items:center;
+  }
+  .about-badge .num{font-family:'Playfair Display',serif;font-size:26px;color:var(--green-light);font-weight:700;}
+  .about-badge .lbl{font-family:'DM Mono',monospace;font-size:10.5px;color:var(--muted-on-dark);letter-spacing:.06em;text-transform:uppercase;max-width:110px;}
+
+  @media(max-width:860px){
+    .about-grid{grid-template-columns:1fr;}
+    .about-photo img{height:340px;}
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line-soft);border:1px solid var(--line-soft);
+  }
+  .service-card{
+    background:var(--cream);padding:40px 34px;position:relative;
+    transition:background .25s;
+  }
+  .service-card:hover{background:#fff;}
+  .service-card .idx{
+    font-family:'DM Mono',monospace;font-size:12px;color:var(--green);letter-spacing:.06em;margin-bottom:22px;display:block;
+  }
+  .service-card h3{font-size:20px;margin-bottom:12px;font-weight:600;}
+  .service-card p{font-size:14px;color:var(--muted-on-light);line-height:1.6;font-weight:300;}
+  @media(max-width:860px){.services-grid{grid-template-columns:1fr;}}
+
+  /* ---------- PROJECT SLIDESHOW ---------- */
+  .slideshow{position:relative;}
+  .slideshow-viewport{
+    position:relative;overflow:hidden;aspect-ratio:16/8.2;background:#0c0d0a;
+  }
+  .slides-track{display:flex;height:100%;transition:transform .6s cubic-bezier(.65,0,.35,1);}
+  .slide{position:relative;height:100%;flex:none;cursor:pointer;}
+  .slide img{width:100%;height:100%;object-fit:cover;}
+  .slide-placeholder{
+    width:100%;height:100%;background:linear-gradient(160deg,#173d29,#0b0c0a);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .slide-placeholder span{
+    font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,.35);text-transform:uppercase;
+  }
+  .slide-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(6,7,5,.9) 0%,rgba(6,7,5,.55) 42%,rgba(6,7,5,.05) 78%);
+    display:flex;flex-direction:column;justify-content:flex-end;padding:52px;color:#fff;
+  }
+  .slide-overlay .tag{
+    font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--green-light);margin-bottom:14px;display:inline-block;
+  }
+  .slide-overlay h3{font-size:clamp(24px,2.6vw,36px);margin-bottom:8px;max-width:520px;}
+  .slide-overlay .loc{font-size:13.5px;color:var(--muted-on-dark);margin-bottom:22px;}
+  .slide-meta{display:flex;gap:36px;font-family:'DM Mono',monospace;flex-wrap:wrap;}
+  .slide-meta div{font-size:11px;color:var(--muted-on-dark);}
+  .slide-meta b{color:#fff;display:block;font-size:16px;font-weight:500;font-family:'Playfair Display',serif;margin-bottom:2px;}
+  .slideshow-controls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:30px;}
+  .slide-arrow{
+    width:46px;height:46px;border-radius:50%;border:1px solid var(--line-soft);background:transparent;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:17px;color:var(--ink);
+    transition:all .2s;
+  }
+  .slide-arrow:hover{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .slide-counter{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--muted-on-light);min-width:64px;text-align:center;}
+  .slide-dots{display:flex;justify-content:center;gap:8px;margin-top:22px;}
+  .slide-dots button{width:8px;height:8px;border-radius:50%;background:var(--line-soft);border:none;cursor:pointer;padding:0;transition:all .25s;}
+  .slide-dots button.active{background:var(--green);width:24px;border-radius:5px;}
+
+  @media(max-width:760px){
+    .slideshow-viewport{aspect-ratio:4/5;}
+    .slide-overlay{padding:28px;background:linear-gradient(180deg,rgba(6,7,5,0) 20%,rgba(6,7,5,.95) 85%);}
+    .slide-meta{gap:20px;}
+  }
+
+  /* ---------- CAREER STATS BAND ---------- */
+  .career-band{
+    background:var(--green-dark);color:#fff;padding:80px 0;
+    position:relative;overflow:hidden;
+  }
+  .career-band::before{
+    content:"";position:absolute;top:0;left:0;width:100%;height:100%;
+    background:linear-gradient(120deg,rgba(0,0,0,.25),transparent 50%);
+  }
+  .career-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:40px;position:relative;z-index:1;}
+  .career-text{max-width:380px;}
+  .career-text .eyebrow{color:var(--green-light);}
+  .career-text p{color:rgba(255,255,255,.72);font-size:14.5px;line-height:1.65;font-weight:300;}
+  .career-stats{display:flex;gap:56px;flex-wrap:wrap;}
+  .career-stats .num{font-family:'Playfair Display',serif;font-size:46px;font-weight:700;}
+  .career-stats .lbl{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:6px;}
+
+  /* ---------- WHY CHOOSE ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+  .why-card{background:var(--bg-dark);padding:38px 32px;}
+  .why-card .bar{width:32px;height:3px;background:var(--green);margin-bottom:20px;}
+  .why-card h3{font-size:18px;color:#fff;margin-bottom:10px;font-family:'Inter';font-weight:600;}
+  .why-card p{font-size:13.5px;color:var(--muted-on-dark);line-height:1.6;font-weight:300;}
+  @media(max-width:860px){.why-grid{grid-template-columns:1fr;}}
+
+  /* ---------- TEAM ---------- */
+  .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+  .team-card{background:var(--cream-2);padding:40px;}
+  .avatar{
+    width:88px;height:88px;border-radius:50%;
+    object-fit:cover;
+    display:block;margin-bottom:22px;
+    border:2px solid var(--green);
+  }
+  .team-card h3{font-size:24px;margin-bottom:4px;}
+  .team-card .role{font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:6px;}
+  .team-card .exp{font-size:13px;color:var(--muted-on-light);margin-bottom:20px;font-weight:500;}
+  .team-card p.bio{font-size:14.5px;line-height:1.72;color:var(--muted-on-light);font-weight:300;}
+  @media(max-width:860px){.team-grid{grid-template-columns:1fr;}}
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust-strip{padding:60px 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);}
+  .trust-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:30px;}
+  .trust-label{font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-light);}
+  .trust-logos{display:flex;gap:48px;flex-wrap:wrap;align-items:center;}
+  .trust-logos span{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--ink);opacity:.55;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .testimonial-card{background:var(--cream-2);padding:34px 30px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px;}
+  .testimonial-card .quote{font-size:15px;line-height:1.65;color:var(--ink);font-weight:400;margin-bottom:24px;}
+  .testimonial-card .quote::before{content:"\201C";color:var(--green);font-family:'Playfair Display',serif;}
+  .testimonial-card .name{font-weight:600;font-size:15px;}
+  .testimonial-card .role{font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:.06em;color:var(--muted-on-light);margin-top:2px;}
+  @media(max-width:860px){.testimonial-grid{grid-template-columns:1fr;}}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+  .contact-info{padding:70px 60px 70px 0;}
+  .contact-info h2{font-size:clamp(30px,3.4vw,44px);color:#fff;margin-bottom:20px;}
+  .contact-info p{color:var(--muted-on-dark);font-size:15px;line-height:1.7;margin-bottom:40px;max-width:420px;font-weight:300;}
+  .contact-detail{display:flex;flex-direction:column;gap:26px;margin-bottom:40px;}
+  .contact-detail .row{display:flex;gap:16px;align-items:flex-start;}
+  .contact-detail .ic{
+    width:38px;height:38px;border:1px solid rgba(255,255,255,.25);flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .contact-detail .ic svg{width:16px;height:16px;stroke:var(--green-light);}
+  .contact-detail .lbl{font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-on-dark);margin-bottom:4px;}
+  .contact-detail .val{color:#fff;font-size:15.5px;font-weight:500;}
+  .contact-form{background:var(--cream);padding:60px;}
+  .contact-form h3{font-size:22px;margin-bottom:8px;color:var(--ink);}
+  .contact-form>p{font-size:13.5px;color:var(--ink);margin-bottom:32px;}
+  .field{margin-bottom:22px;}
+  .field label{display:block;font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-on-light);margin-bottom:8px;}
+  .field input,.field select,.field textarea{
+    width:100%;padding:14px 16px;border:1px solid var(--line-soft);background:#fff;
+    font-family:'Inter';font-size:14px;color:var(--ink);
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);}
+  .field textarea{resize:vertical;min-height:100px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .confirm-box{
+    display:none;text-align:center;padding:50px 20px;
+  }
+  .confirm-box .ck{
+    width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px;
+  }
+  .confirm-box h3{margin-bottom:10px;}
+  .confirm-box p{color:var(--muted-on-light);font-size:14px;}
+  @media(max-width:900px){
+    .contact-grid{grid-template-columns:1fr;}
+    .contact-info{padding:70px 32px 40px;}
+    .contact-form{padding:40px 32px 60px;}
+    .form-row{grid-template-columns:1fr;}
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#080906;color:rgba(255,255,255,.55);padding:64px 0 28px;}
+  .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:48px;margin-bottom:56px;}
+  .footer-brand p{max-width:280px;font-size:13.5px;line-height:1.6;margin-top:16px;font-weight:300;}
+  .footer-cols{display:flex;gap:72px;flex-wrap:wrap;}
+  .footer-col h4{
+    font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:#fff;margin-bottom:18px;font-weight:500;
+  }
+  .footer-col a{display:block;font-size:13.5px;margin-bottom:12px;color:rgba(255,255,255,.55);transition:color .2s;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);padding-top:24px;
+    display:flex;justify-content:space-between;font-size:12px;flex-wrap:wrap;gap:12px;
+  }
+
+  .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  .fade-up.in{opacity:1;transform:translateY(0);}
+
+  ::selection{background:var(--green);color:#fff;}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="nav">
+    <a href="#top" class="logo">
+      <img class="logo-mark-img" src="images/fgn-logo-transparent.png" alt="FGN logo">
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:0404563594">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0404 563 594
+      </a>
+      <a href="#contact" class="btn btn-solid">Get a Quote</a>
+      <button class="burger" id="burgerBtn">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-cut"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Commercial Fit-Out Specialists · Sydney, NSW</div>
+    <h1>Spaces built to <em>perform</em>,<br>not just impress.</h1>
+    <p class="lead">FGN is a Sydney-based commercial fit-out contractor pairing hands-on trade expertise with commercial project controls, delivering on time, on budget, and in alignment with client expectations.</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-solid">View Our Work</a>
+      <a href="#contact" class="btn btn-outline-dark">Get a Quote</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="num">17 yrs</div><div class="lbl">Combined Experience</div></div>
+      <div><div class="num">40+</div><div class="lbl">Major Projects Delivered</div></div>
+      <div><div class="num">National</div><div class="lbl">NSW · ACT · QLD · VIC</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy fade-up">
+        <div class="eyebrow dark">About Us</div>
+        <h2 style="margin-bottom:26px;">A lean team built to deliver</h2>
+        <p>FGN is a Sydney-based commercial fit-out contractor led by a strong core team that pairs hands-on trade expertise with commercial project controls. We deliver projects of all values, shapes and sizes, on time, on budget and in alignment with client expectations.</p>
+        <p>Project stakeholders deal directly with the team running the job: no layers of management, one line of communication. That means faster decisions, tighter cost control and a high quality build that reflects the design intent.</p>
+      </div>
+      <div class="about-photo fade-up">
+        <img src="images/mayvun-arc-about.jpg" alt="Mayvun Arc office fit-out delivered by FGN, MayvunArc logo on reception wall">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--cream-2);">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <h2>What we deliver</h2>
+      <p>Six core capabilities covering the full lifecycle of a commercial fit-out, from first sketch to defect-free handover.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="services-grid fade-up">
+      <div class="service-card">
+        <span class="idx">01</span>
+        <h3>Commercial Fit-Outs</h3>
+        <p>Office, retail, hospitality and wellness fit-out delivery, coordination &amp; management.</p>
+      </div>
+      <div class="service-card">
+        <span class="idx">02</span>
+        <h3>Base Building Make-Good</h3>
+        <p>Tenancy reinstatement, spec suites, base building upgrades and make good projects.</p>
+      </div>
+      <div class="service-card">
+        <span class="idx">03</span>
+        <h3>Joinery &amp; High-End Finishes</h3>
+        <p>Bespoke joinery, detailing and premium finishes.</p>
+      </div>
+      <div class="service-card">
+        <span class="idx">04</span>
+        <h3>Scheduling &amp; Procurement</h3>
+        <p>Long-lead items, sampling, material sourcing and trade packaging.</p>
+      </div>
+      <div class="service-card">
+        <span class="idx">05</span>
+        <h3>Site Management &amp; Subcontractor Coordination</h3>
+        <p>HSEQ, stakeholder management, risk management, sequencing, site supervision.</p>
+      </div>
+      <div class="service-card">
+        <span class="idx">06</span>
+        <h3>QS &amp; Contract Administration</h3>
+        <p>Budgeting, value engineering, authority approvals and transparent cost reporting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <h2>Our Projects</h2>
+      <p>A mix of projects delivered together under FGN, and landmark builds from Elliot &amp; Will's prior roles with leading Sydney contractors, the experience base FGN is built on.</p>
+    </div>
+
+    <div class="slideshow fade-up" id="projectSlideshow">
+      <div class="slideshow-viewport">
+        <div class="slides-track" id="slidesTrack">
+
+          <div class="slide">
+            <img src="images/imagen-menstyle.jpg" alt="IMAGEN Menstyle barber shop fit-out">
+            <div class="slide-overlay">
+              <span class="tag">Refurbishment</span>
+              <h3>IMAGEN Menstyle: Barber Shop</h3>
+              <div class="loc">Sydney · Delivered together under FGN</div>
+              <div class="slide-meta">
+                <div><b>$67k</b>Value</div>
+                <div><b>31 sqm</b>Size</div>
+                <div><b>Refurb</b>Scope</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/mayvun-arc.jpg" alt="Mayvun Arc office fit-out reception">
+            <div class="slide-overlay">
+              <span class="tag">Refurbishment</span>
+              <h3>Mayvun Arc: Office Fit Out</h3>
+              <div class="loc">Sydney CBD · Delivered together under FGN</div>
+              <div class="slide-meta">
+                <div><b>$170k</b>Value</div>
+                <div><b>124 sqm</b>Size</div>
+                <div><b>Refurb</b>Scope</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/w-hotel-entrance.jpg" alt="The Ribbon W Hotel entrance">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out · Sydney CBD</span>
+              <h3>The Ribbon: W Hotel &amp; IMAX</h3>
+              <div class="loc">Career project · Prior role</div>
+              <div class="slide-meta">
+                <div><b>$165m</b>Value</div>
+                <div><b>60,000 sqm</b>Size</div>
+                <div><b>Fit Out</b>Scope</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/pitt-st-lobby.jpg" alt="320 Pitt Street lobby">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out &amp; Make Good</span>
+              <h3>320 Pitt Street</h3>
+              <div class="loc">MSC Defence Fit Out · Sydney CBD</div>
+              <div class="slide-meta">
+                <div><b>$120m</b>Value</div>
+                <div><b>19 levels</b>Size</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/level34-35-staircase.jpg" alt="Level 34 and 35, 1 O'Connell Street staircase">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out</span>
+              <h3>Level 34 &amp; 35: 1 O'Connell St</h3>
+              <div class="loc">Sydney CBD · Workplace Fit-Out</div>
+              <div class="slide-meta">
+                <div><b>$15m</b>Value</div>
+                <div><b>4,000 sqm</b>Size</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/level29-chifley-corridor.jpg" alt="Level 29, Chifley Tower corridor">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out</span>
+              <h3>Level 29, Chifley Tower</h3>
+              <div class="loc">Sydney CBD · Corporate Fit Out</div>
+              <div class="slide-meta">
+                <div><b>$6m</b>Value</div>
+                <div><b>2,000 sqm</b>Size</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/level16-23-bar.jpg" alt="Levels 16 and 23.04, 1 O'Connell Street lounge">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out</span>
+              <h3>Levels 16 &amp; 23.04: 1 O'Connell St</h3>
+              <div class="loc">Sydney CBD · Base Building Upgrade</div>
+              <div class="slide-meta">
+                <div><b>$2.1m</b>Value</div>
+                <div><b>2,000 sqm</b>Size</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/malaya-terrace.jpg" alt="The Malaya rooftop terrace">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out</span>
+              <h3>The Malaya</h3>
+              <div class="loc">Sydney CBD · Waterfront Hospitality</div>
+              <div class="slide-meta">
+                <div><b>$2.8m</b>Value</div>
+                <div><b>1,200 sqm</b>Size</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="images/warren-mahoney.jpg" alt="Warren and Mahoney head office heritage fit-out">
+            <div class="slide-overlay">
+              <span class="tag">Fit Out</span>
+              <h3>Warren &amp; Mahoney: Head Office</h3>
+              <div class="loc">The Rocks, Sydney · Heritage Fit-Out</div>
+              <div class="slide-meta">
+                <div><b>$550k</b>Value</div>
+                <div><b>250 sqm</b>Size</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slideshow-controls">
+        <button class="slide-arrow" id="prevSlide" aria-label="Previous project">&#8592;</button>
+        <div class="slide-counter"><span id="slideCurrent">01</span> / <span id="slideTotal">09</span></div>
+        <button class="slide-arrow" id="nextSlide" aria-label="Next project">&#8594;</button>
+      </div>
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="career-band">
+  <div class="wrap career-inner">
+    <div class="career-text fade-up">
+      <div class="eyebrow">Career History Portfolio</div>
+      <p>Selected projects delivered by Elliot and Will in prior roles with leading Sydney contractors. The foundation FGN Projects is built on.</p>
+    </div>
+    <div class="career-stats fade-up">
+      <div><div class="num">$165m</div><div class="lbl">Largest project value</div></div>
+      <div><div class="num">60,000</div><div class="lbl">Largest fit-out (sqm)</div></div>
+      <div><div class="num">19</div><div class="lbl">Levels on a single fit-out</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="section-dark">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <h2 style="color:#fff;">What clients get with FGN</h2>
+      <p>Trade-led leadership, commercially run: the rigour of a major contractor with the responsiveness of a small, dedicated team.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="why-grid fade-up">
+      <div class="why-card">
+        <div class="bar"></div>
+        <h3>Trade-led, commercially run</h3>
+        <p>Hands-on trade leadership paired with commercial project controls on every job.</p>
+      </div>
+      <div class="why-card">
+        <div class="bar"></div>
+        <h3>Direct communication</h3>
+        <p>You speak directly to the team running the project, with no layers of management.</p>
+      </div>
+      <div class="why-card">
+        <div class="bar"></div>
+        <h3>Proven across all scales</h3>
+        <p>Experience on projects up to $165m in value across office, retail, hospitality, wellness, residential and defence.</p>
+      </div>
+      <div class="why-card">
+        <div class="bar"></div>
+        <h3>Strong subcontractor network</h3>
+        <p>An established and reliable supply chain, built on trusted relationships with teams we know and have successfully delivered projects alongside.</p>
+      </div>
+      <div class="why-card">
+        <div class="bar"></div>
+        <h3>Responsive to your programme</h3>
+        <p>Adaptable to client and leasing agent timelines, including out-of-hours and staged works.</p>
+      </div>
+      <div class="why-card">
+        <div class="bar"></div>
+        <h3>Safety and compliance focused</h3>
+        <p>Contractors license certified, built to code, with a defect-minimisation mindset from day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <h2>Two principals. Direct accountability.</h2>
+      <p>No account managers, no hand-offs: the people who scope your project are the people who run it on site.</p>
+    </div>
+    <div class="team-grid fade-up">
+      <div class="team-card">
+        <img class="avatar" src="images/team-elliot.jpg" alt="Elliot Terry-Fagan, Managing Director at FGN">
+        <h3>Elliot Terry-Fagan</h3>
+        <div class="role">Managing Director</div>
+        <div class="exp">10+ years in Carpentry, Building &amp; Site Supervision</div>
+        <p class="bio">Elliot specialises in bringing plans to life, with a solution-focused mindset that helps clients and designers turn their vision into reality. Experienced in organising and coordinating multiple trade teams to keep projects moving efficiently and on schedule, with strong supplier relationships that secure quality products without compromising budget or timeline. A background in remedial and residential construction has instilled a deep commitment to building to code and minimising defects from the outset.</p>
+      </div>
+      <div class="team-card">
+        <img class="avatar" src="images/team-will.jpg" alt="Will Desborough, Construction Manager at FGN">
+        <h3>Will Desborough</h3>
+        <div class="role">Construction Manager</div>
+        <div class="exp">7+ years in QS, Project Engineering &amp; Project Management</div>
+        <p class="bio">Will brings a strong background in Quantity Surveying and Project Management, having worked across projects ranging from $340k to $165m in value, including CBD office fit-outs, retail, hospitality and defence sectors. Clients benefit from tighter cost control, accurate budgeting and transparent contract management from day one, with design, procurement and construction stages effectively coordinated, executed and tracked. Will demonstrates the rigour of a major commercial builder, with the responsiveness of a small, dedicated team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="wrap trust-inner">
+    <div class="trust-label">Trusted alongside</div>
+    <div class="trust-logos">
+      <span>Buildcorp</span>
+      <span>SGB Group</span>
+      <span>Mayvun Arc</span>
+      <span>IMAGEN Menstyle</span>
+      <span>Warren &amp; Mahoney</span>
+    </div>
+  </div>
+</div>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <h2>What clients say</h2>
+      <p>Direct feedback from recent clients</p>
+    </div>
+    <div class="testimonial-grid fade-up">
+      <div class="testimonial-card">
+        <p class="quote">Great communication from start to finish. The team were proactive, stayed true to the design intent and delivered a quality result on programme.</p>
+        <div class="person">
+          <div class="name">Cilla Arnold</div>
+          <div class="role">Co-Founder, Mayvun Arc</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">The team understood the vision from day one and delivered it with great attention to detail, clear coordination and a strong finish.</p>
+        <div class="person">
+          <div class="name">Guy Binder</div>
+          <div class="role">Director, SGB Group</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">A smooth project with strong collaboration, practical solutions and an excellent final result.</p>
+        <div class="person">
+          <div class="name">Erwin Mahdavi</div>
+          <div class="role">Founder, IMAGEN Menstyle</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-dark" style="padding:0;">
+  <div class="wrap" style="padding:0 32px;">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="eyebrow">Contact</div>
+        <h2>Let's talk about<br>your next fit-out.</h2>
+        <p>Whether it's a full CBD tenancy, a base building make-good or a bespoke joinery package, tell us about the project and we'll come back with a clear scope and programme.</p>
+        <div class="contact-detail">
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="lbl">Phone</div><div class="val">0404 563 594</div></div>
+          </div>
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></div>
+            <div><div class="lbl">Email</div><div class="val">elliot@fgnprojects.com.au</div></div>
+          </div>
+          <div class="row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+            <div><div class="lbl">ABN</div><div class="val">80 694 129 274</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form fade-up">
+        <div id="formStep">
+          <h3>Request a quote</h3>
+          <p>Fields marked with an asterisk are required.</p>
+          <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="quoteForm">
+            <input type="hidden" name="form-name" value="quote-request">
+            <p style="position:absolute;left:-9999px;">
+              <label>Leave this field blank: <input name="bot-field"></label>
+            </p>
+            <div class="form-row">
+              <div class="field">
+                <label>Name*</label>
+                <input type="text" name="name" required>
+              </div>
+              <div class="field">
+                <label>Company</label>
+                <input type="text" name="company">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label>Email*</label>
+                <input type="email" name="email" required>
+              </div>
+              <div class="field">
+                <label>Phone</label>
+                <input type="tel" name="phone">
+              </div>
+            </div>
+            <div class="field">
+              <label>Project Type</label>
+              <select name="project_type">
+                <option>Commercial Fit-Out</option>
+                <option>Base Building Make-Good</option>
+                <option>Joinery / High-End Finishes</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Project Brief</label>
+              <textarea name="brief" placeholder="Tell us about the space, timeline and scope..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-solid" style="width:100%;justify-content:center;" id="quoteSubmitBtn">Send Enquiry</button>
+            <div class="error" id="quoteErrorMsg" style="display:none;color:#c0392b;font-size:13px;margin-top:10px;">Something went wrong, please try again or email elliot@fgnprojects.com.au directly.</div>
+          </form>
+        </div>
+        <div class="confirm-box" id="confirmBox">
+          <div class="ck">&#10003;</div>
+          <h3>Enquiry received</h3>
+          <p>Thanks! The FGN team will be in touch within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <img class="logo-mark-img" src="images/fgn-logo-transparent.png" alt="FGN logo">
+          <div class="logo-text">FGN</div>
+        </div>
+        <p>Commercial fit-out specialists delivering across NSW, ACT, QLD & VIC, on time, on budget, on brief.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#team">Team</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:0404563594">0404 563 594</a>
+          <a href="mailto:elliot@fgnprojects.com.au">elliot@fgnprojects.com.au</a>
+          <a href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FGN. ABN 80 694 129 274.</span>
+      <span>Sydney, NSW · Commercial Fit-Out Specialists · <a href="/privacy/" style="color:inherit;text-decoration:underline;">Privacy</a> · <a href="/ai-info/" style="color:inherit;text-decoration:underline;">AI &amp; LLM info</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // scroll fade-ins
+  const faders = document.querySelectorAll('.fade-up');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.15});
+  faders.forEach(f=>io.observe(f));
+
+  // project slideshow
+  const track = document.getElementById('slidesTrack');
+  const slides = Array.from(track.children);
+  const total = slides.length;
+  let slideIndex = 0;
+  let autoTimer = null;
+
+  document.getElementById('slideTotal').textContent = String(total).padStart(2,'0');
+
+  // Fixed percentage sizing: track is exactly total*100% wide, each slide is
+  // exactly 100/total% of the track. This keeps translateX(-n * 100/total %)
+  // exact regardless of image load timing, rounding, or window size (no JS
+  // measurement needed, so no drift between slides).
+  const slideWidthPct = 100 / total;
+  track.style.width = (total * 100) + '%';
+  slides.forEach(s => { s.style.width = slideWidthPct + '%'; });
+
+  const dotsWrap = document.getElementById('slideDots');
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    if(i === 0) dot.classList.add('active');
+    dot.setAttribute('aria-label', 'Go to project ' + (i+1));
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function applyOffset(){
+    track.style.transform = 'translateX(-' + (slideIndex * slideWidthPct) + '%)';
+  }
+
+  function goToSlide(i){
+    slideIndex = (i + total) % total;
+    applyOffset();
+    document.getElementById('slideCurrent').textContent = String(slideIndex + 1).padStart(2,'0');
+    dots.forEach((d, idx) => d.classList.toggle('active', idx === slideIndex));
+  }
+
+  function nextSlide(){ goToSlide(slideIndex + 1); }
+  function prevSlide(){ goToSlide(slideIndex - 1); }
+
+  document.getElementById('nextSlide').addEventListener('click', nextSlide);
+  document.getElementById('prevSlide').addEventListener('click', prevSlide);
+  slides.forEach(s => s.addEventListener('click', nextSlide));
+
+  function startAuto(){ autoTimer = setInterval(nextSlide, 6000); }
+  function stopAuto(){ clearInterval(autoTimer); }
+  startAuto();
+  const slideshowEl = document.getElementById('projectSlideshow');
+  slideshowEl.addEventListener('mouseenter', stopAuto);
+  slideshowEl.addEventListener('mouseleave', startAuto);
+
+  // contact form: real Netlify Forms submission (AJAX, no page reload)
+  const form = document.getElementById('quoteForm');
+  if(form){
+    function encodeFormData(data){
+      return Object.keys(data).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k])).join('&');
+    }
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const submitBtn = document.getElementById('quoteSubmitBtn');
+      const errorMsg = document.getElementById('quoteErrorMsg');
+      errorMsg.style.display = 'none';
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encodeFormData(data)
+      })
+        .then(() => {
+          document.getElementById('formStep').style.display = 'none';
+          document.getElementById('confirmBox').style.display = 'block';
+        })
+        .catch(() => {
+          errorMsg.style.display = 'block';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Enquiry';
+        });
+    });
+  }
+
+  // burger (mobile), simple toggle for this mockup
+  const burger = document.getElementById('burgerBtn');
+  if(burger){
+    burger.addEventListener('click', ()=>{
+      document.querySelector('.nav-links')?.classList.toggle('show');
+    });
+  }
+</script>
+
+</body>
+</html>
